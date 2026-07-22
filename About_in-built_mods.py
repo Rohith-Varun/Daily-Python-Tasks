@@ -33,15 +33,15 @@ print(math.pow(5,7))
 import random
 print(random.randint(1000, 9999))
 
-'''import random
+import random
 for i in range(1,5):
     print(random.randint(1,9), end = "")
     
-print(random.choice(["red", "blue", "green", "black", "white", "yellow", "orange", "pink", "purple", "brown"]))'''
+print(random.choice(["red", "blue", "green", "black", "white", "yellow", "orange", "pink", "purple", "brown"]))
 
 #date & time module
 #import datetime
-'''print("Today date and time is :", datetime.datetime.now())
+print("Today date and time is :", datetime.datetime.now())
 
 print("Today's date is : ", datetime.date.today())
 print("Today's date is : ", datetime.date.today().strftime("%d/%m/%Y"))
@@ -54,12 +54,12 @@ print("The Time is : ", datetime.datetime.now().strftime("%H:%M:%S"))'''
 '''print(sys.version)
 print(sys.version_info)
 print(sys.platform)
-print(sys.path)'''
+print(sys.path)
 
-'''l = [1,2,3,4]
+l = [1,2,3,4]
 t = (1,2,3,4)
 print(sys.getsizeof(l))
-print(sys.getsizeof(t))'''
+print(sys.getsizeof(t))
 
 #os module
 '''import os
