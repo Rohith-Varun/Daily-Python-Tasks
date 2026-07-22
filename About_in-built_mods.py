@@ -1,10 +1,10 @@
 #import math
-'''print(math.sqrt(6))
+print(math.sqrt(6))
 print(int(math.sqrt(6)))
-print(math.isqrt(6))'''
+print(math.isqrt(6))
 
-"""print(math.factorial(5))
-print(math.factorial(9))"""
+print(math.factorial(5))
+print(math.factorial(9))
 
 '''print(math.pi)
 print(math.floor(6.5))
