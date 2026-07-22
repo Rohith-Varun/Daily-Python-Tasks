@@ -6,18 +6,18 @@ print(math.isqrt(6))
 print(math.factorial(5))
 print(math.factorial(9))
 
-'''print(math.pi)
+print(math.pi)
 print(math.floor(6.5))
 print(math.floor(6))
-print(round(3.4)) #round is not a math module function to use round we can use round() function directly'''
+print(round(3.4)) #round is not a math module function to use round we can use round() function directly
 
-'''print(math.ceil(3.3))
+print(math.ceil(3.3))
 print(math.ceil(3.5))
 print(math.ceil(3.7))
 #in the ceil function the value represents the next round of the int value only 
-print(math.ceil(2.5))'''
+print(math.ceil(2.5))
 
-'''print(math.ceil(2.3))#3
+print(math.ceil(2.3))#3
 print(math.ceil(2.1))#3
 print(math.ceil(2.0))#2
 print(round(2.2))#2
@@ -27,11 +27,11 @@ print(round(2.7))#3
 #in the round fun the nearset value of the int will return if ,value is <= 5 the below val and >5 the next int val
 
 print(math.pow(3,3))
-print(math.pow(5,7))'''
-'''
+print(math.pow(5,7))
+
 #random - used to generate the raandom values like otps and others fun used is randint
 import random
-print(random.randint(1000, 9999))'''
+print(random.randint(1000, 9999))
 
 '''import random
 for i in range(1,5):
