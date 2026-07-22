@@ -62,16 +62,16 @@ print(sys.getsizeof(l))
 print(sys.getsizeof(t))
 
 #os module
-'''import os
+import os
 print(os.name)
 print(os.path)
-print(os.getcwd())#current working directory returns the current working file path and name'''
+print(os.getcwd())#current working directory returns the current working file path and name
 
 #statistics module
-'''import statistics
+import statistics
 l = [1,3,5,2,8,8,3,5,3,5]
 print(statistics.mean(l))
 print(statistics.median(l))
-print(statistics.mode(l))'''
+print(statistics.mode(l))
 
 #json module - JavaScript Object Notation - used to convert the python data into json format in dictonary format this displays the simple datav
