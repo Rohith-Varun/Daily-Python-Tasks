@@ -15,4 +15,4 @@ print(a)
 
 a=["p", "y", "t", "h", "o", "n"]
 for index, value in enumerate(a):
-    print(index, value)
+    print(index,value)
