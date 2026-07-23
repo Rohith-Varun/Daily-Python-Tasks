@@ -1,4 +1,4 @@
-import math
+jiimport math
 print(math.sqrt(6))
 print(int(math.sqrt(6)))
 print(math.isqrt(6))
@@ -74,4 +74,4 @@ print(statistics.mean(l))
 print(statistics.median(l))
 print(statistics.mode(l))
 
-#json module - JavaScript Object Notation - used to convert the python data into json format in dictonary format this displays the simple datav
+#json module - JavaScript Object Notation - used to convert the python data into json format in dictonary format this displays the simple data
