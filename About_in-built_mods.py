@@ -1,4 +1,4 @@
-#import math
+import math
 print(math.sqrt(6))
 print(int(math.sqrt(6)))
 print(math.isqrt(6))
