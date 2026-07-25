@@ -1,4 +1,4 @@
-''''print("Varun")
+print("Varun")
 print(21)
 print("Vijayawada")
 print("---")
@@ -24,7 +24,7 @@ print("11:00 AM - Appitude")
 print("02:00 AM - SoftSkills")
 print("04:00 AM - Practice Session")
 
-print("--------------------------------------------------------------------------------------------")'''
+print("--------------------------------------------------------------------------------------------")
 
 #using Variable
 print("USED VARIABLES:")
