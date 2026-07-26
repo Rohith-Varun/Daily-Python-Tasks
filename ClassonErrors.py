@@ -1,4 +1,4 @@
-'''a = int(input("a : "))
+a = int(input("a : "))
 b = int(input("b : "))
 print(a+b)
 print(a-b)
@@ -6,7 +6,7 @@ print(a*b)
 try:
     print(a/b)
 except ZeroDivisionError:
-    print("Error: Division by zero is not allowed.")'''
+    print("Error: Division by zero is not allowed.")
     
 
 l=[1,2,3,4]
