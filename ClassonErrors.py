@@ -8,6 +8,7 @@ try:
 except ZeroDivisionError:
     print("Error: Division by zero is not allowed.")
     
+print("-------------------------------------------------------------")
 
 l=[1,2,3,4]
 print(l[2])
@@ -16,4 +17,3 @@ try:
 except IndexError:
     print("Error: Index is out of range.")
 print(l[-1])
-
