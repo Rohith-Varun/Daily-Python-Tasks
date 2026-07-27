@@ -32,7 +32,7 @@ g = int(input("Enter g : "))
 h = int(input("Enter h : "))
 print(div(g, h))
 
-'''from enu import add, sub, mul, div
+from enu import add, sub, mul, div
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 c = int(input("Enter c : "))
@@ -45,4 +45,3 @@ print("The sum of two numbers is: ", add(a, b))
 print("C - d : ", sub(c, d))
 print("e * f : ", mul(e, f))
 print("g / h : ", div(g, h))
-'''
