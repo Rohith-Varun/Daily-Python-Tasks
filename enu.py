@@ -1,10 +1,10 @@
-'''def message():
+def message():
     return "Helloo..!"
 print(message())'''
 
-'''def message(name):
+def message(name):
     return "Helloo..! " + name
-print(message("Varun! How are you?"))'''
+print(message("Varun! How are you?"))
 
 #mini calculator
 def add(a, b):
