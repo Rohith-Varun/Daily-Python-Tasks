@@ -1,15 +1,15 @@
-'''import enu
+import enu
 #print(enu.message())
 print(enu.message("Hii Varun!, How are you?"))
-'''
+
 
 #2nd way of module creation 
-'''from enu import message
-print(message("Hii Varun!, This is the second way of module creation"))'''
+from enu import message
+print(message("Hii Varun!, This is the second way of module creation"))
 
 #3rd way of module creation
-'''from enu import message as msg
-print(msg("Hii Varun!, This is the third way of module creation"))'''
+from enu import message as msg
+print(msg("Hii Varun!, This is the third way of module creation"))
 
 #mini calculator
 from enu import add
