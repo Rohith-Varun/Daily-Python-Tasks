@@ -9,5 +9,6 @@ s1 = Student()
 print(s1.collegename)
 print(s1.name)
 print(Student.collegename)
+
 s2 = Student()
 print(s2.collegename)
