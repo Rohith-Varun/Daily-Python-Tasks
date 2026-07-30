@@ -1,3 +1,4 @@
+#Instance Methods
 class Student:
     collegename = "CRRCOE"
     def __init__(self):
