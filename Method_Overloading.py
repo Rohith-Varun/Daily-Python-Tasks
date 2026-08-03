@@ -1,6 +1,6 @@
 #method over riding same name and different parameters 
 
-'''class Test:
+class Test:
     def m1(self):
         print("No arguments menthos")
         
@@ -13,7 +13,6 @@
 t = Test()
 t.m1("k", "l")
 #default args,"args
-'''
 
 #method overloading using variable length arguments 
 '''class Test():
