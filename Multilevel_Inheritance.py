@@ -1,3 +1,4 @@
+#Mulilevel Inheritance 
 class Animal:#Grand parent class
     def Eat(self):
         print("Animal Eats")
@@ -11,6 +12,7 @@ a = Babydog()
 a.Cry()
 a.Bark()
 a.Eat()  
+
 class Intern:
     def Fresher(self):
         print("Learning")
