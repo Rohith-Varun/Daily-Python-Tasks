@@ -1,4 +1,4 @@
-'''class Animal:
+class Animal:
     def Allanimals(self):
         print("Animals are different")
         
@@ -15,7 +15,7 @@ b = Dog() #object creation for the Class Dog
 a.Allanimals()
 a.Cats()
 b.Allanimals()
-b.Dogs()'''
+b.Dogs()
 
 class Clg:
     def Dept(self):
