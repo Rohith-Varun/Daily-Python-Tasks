@@ -38,9 +38,9 @@ class Mech(Clg):
          print("Dept of Mech")
         
 a = Cse()
-#b = IT()
-#c = ECE()
-#d = Mech()
+b = IT()
+c = ECE()
+d = Mech()
 a.Dept()
 a.CseDept()
 
