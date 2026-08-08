@@ -1,6 +1,5 @@
 class Student:
-    collegename = "CRRCOE"
-    
+    collegename = "CRRCOE"    
     def __init__(self):
         self.name = "Varun"
         self.age = 21
