@@ -1,5 +1,3 @@
-#Instance Variables:
-
 class Student:
     def __init__(self):
         self.name = "Varun"
@@ -8,7 +6,6 @@ class Student:
         print("My name is :", self.name)
         print("My age is :", self.age)
         print("My dept is :", self.dept)
-        
 s1 = Student()
 print(s1.name)
 print(s1.age)
