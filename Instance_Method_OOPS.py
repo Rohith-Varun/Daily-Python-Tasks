@@ -1,9 +1,11 @@
 class Student:
-    collegename = "CRRCOE"    
+    collegename = "CRRCOE"
+    
     def __init__(self):
         self.name = "Varun"
         self.age = 21
-        self.dept = "CSE"      
+        self.dept = "CSE"
+        
     def display(self):
         print("Name:", self.name)
         print("Age:", self.age)
