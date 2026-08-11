@@ -1,4 +1,4 @@
-'''class Bank:
+class Bank:
     def __init__ (self, name, balance, password):
         self.name = name
         self._balance = balance # "_" means protected single underscore means protected variable
@@ -14,7 +14,7 @@ t.name = "Rohith"
 print(t.name)
 print(t._balance)
 t.__password = 1244
-print(t.__password)'''
+print(t.__password)
 
 class Bank:
     def __init__(self, name, balance, password):
