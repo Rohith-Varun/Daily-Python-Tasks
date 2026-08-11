@@ -6,8 +6,7 @@ class Bank:
     def m1(self):
         pass
     def m2(self):
-        pass
-    
+        pass   
 t = Bank("Varun", 10000, 1234)
 print(t.name)
 t.name = "Rohith"
@@ -28,8 +27,7 @@ class Bank:
             self._balance -= amount
             return f"transaction successful, update balance is : {self._balance}"
         else:
-            return f"tansation failed"
-        
+            return f"tansation failed"      
 b = Bank("Varun", 5000, 1234)
 print(b.name)
 print(b._balance)
