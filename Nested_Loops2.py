@@ -1,4 +1,4 @@
-'''#right angled triangle pattern
+#right angled triangle pattern
 for i in range (0,5):#outer Loop
     for j in range (1, i+1):#inner Loop
         print("*",end=" ")
@@ -33,4 +33,3 @@ for i in range(5,0,-1):#outer Loop
     for k in range (1, i+0):#inner Loop
         print("*",end=" ")
     print("*")
- #explination 
