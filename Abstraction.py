@@ -12,7 +12,6 @@ class Mobile(ABC):
     def details(self): #concreate method cause the method have name and declaration
         return "Hello Nothing"
 #we can't create an object to the abstract class because they are temporary 
-
 #m = Mobile() #TypeError: Can't instantiate abstract class Mobile without an implementation for abstract methods 'battery', 'display', 'memory_space'
 class Nothing(Mobile): #child class -> this makes all the abstract classes will be abstracted to the child class 
     def __init__ (self, model, display_quality,camera_quality):
