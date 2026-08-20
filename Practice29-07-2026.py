@@ -1,7 +1,5 @@
 # Airline Ticket Booking System
-
 base_price = 5000
-
 print("Choose ticket class:")
 print("1. Economy")
 print("2. Premium Economy")
