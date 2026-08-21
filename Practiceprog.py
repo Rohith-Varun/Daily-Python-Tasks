@@ -1,5 +1,4 @@
 # Example showing Instance Variable, Class Variable, Instance Method, Class Method, and Static Method
-
 class Student:
     school_name = "CRRCOE"  # Class variable
 
@@ -20,7 +19,6 @@ class Student:
     @staticmethod
     def is_pass(marks):  # Static method
         return marks >= 35
-
 
 # Creating objects
 s1 = Student("Rohith", 80)
