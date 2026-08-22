@@ -1,13 +1,13 @@
-'''import numpy as np
+import numpy as np
 numbers = np.array([1,2,3])
-print(numbers)'''
+print(numbers)
 
-'''import numpy as np
+import numpy as np
 l = [1,2,3]
 numbers = np.array(l)
 print(numbers)
 print(type(l))
-print(type(numbers))'''
+print(type(numbers))
 
 '''import numpy as np
 num = np.array([[1,2,3], [3,4,5]]) #for creating the 2D array
