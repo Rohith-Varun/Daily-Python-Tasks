@@ -1,6 +1,6 @@
-'''import numpy as np
+import numpy as np
 data = np.arange(1,10,2) #start, stop, step
-print(data)'''
+print(data)
 
 '''import numpy as np
 data = np.linspace(1,25,5) #linerspace sequence of numbers the numbers start and end muct involved and also the step, stop, num
