@@ -18,11 +18,11 @@ print(sum(data))
 print(min(data))
 print(max(data))
 print(data.mean())
-'''
+
 import numpy as np
 data = np.array([1,2,3,4,5,5,6])
 print(data.mean())
-print(np.mean(data))'''
+print(np.mean(data))
 
 
 
