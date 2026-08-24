@@ -6,7 +6,6 @@ import numpy as np
 data = np.linspace(1,25,5) #linerspace sequence of numbers the numbers start and end muct involved and also the step, stop, num
 print(data)
 
-
 import numpy as np
 data = np.array([1,2,3,4,5,6]) #the each element in the array will be added with 10 
 print(data)
