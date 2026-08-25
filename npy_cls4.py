@@ -24,10 +24,10 @@ data = np.array([[1,2,3], [4,5,6]])
 print(data[0][2])
 print(data[1][1])
 
-'''import numpy as np
+import numpy as np
 data = np.array([1,2,3,4,5])
 print(data)
 data[2] = 99
 print(data)
 newdata = data.view()
-print(newdata)'''
+print(newdata)
