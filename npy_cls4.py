@@ -1,9 +1,9 @@
-'''import numpy as np
+import numpy as np
 data = np.array([[1,2,3],[5,6,7]])
 print(data)
 print(data.shape)
 print(data.reshape(3,2))
-print(data.shape)'''
+print(data.shape)
 
 '''import numpy as np
 data = np.array([1,2,3,4,5])
