@@ -5,12 +5,12 @@ print(data.shape)
 print(data.reshape(3,2))
 print(data.shape)
 
-'''import numpy as np
+import numpy as np
 data = np.array([1,2,3,4,5])
 print(data)
 print(data[0])
 print(data[3])
-print(data[5])'''
+print(data[5])
 
 '''import numpy as np
 data = np.array([1,2,3,4,5,6])
