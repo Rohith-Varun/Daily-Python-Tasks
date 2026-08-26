@@ -1,4 +1,4 @@
-'''import pandas as pd
+import pandas as pd
 data = pd.Series([10,20,30,40], index = ["Arjun", "Bheema", "Dhrama", "Krishna"])
 print(data)
 
@@ -16,5 +16,5 @@ print(df.tail()) #returns the delfault last 5 rows
 print(df.tail(2)) #returns the last 2 rows
 print("-----------------------")
 print(df.info()) #to get the information of the data 
-print(df.describe())'''
+print(df.describe())
 
