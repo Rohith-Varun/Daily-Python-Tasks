@@ -17,4 +17,3 @@ print(df.tail(2)) #returns the last 2 rows
 print("-----------------------")
 print(df.info()) #to get the information of the data 
 print(df.describe())
-
