@@ -15,8 +15,7 @@ r = numpy.random.rand(3,3) #used to generate the values between 0 t0 10
 print(r)
 print(range)
 
-'''import numpy
+import numpy
 numpy.random.seed(10)
 r = numpy.random.choice([10,20,30,40,50,60,70,80], 5)
 print(r)
-'''
