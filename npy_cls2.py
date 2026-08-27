@@ -9,11 +9,11 @@ print(eye)
 import numpy as np
 rand_int = np.random.randint(1,100,(3,3))
 print(rand_int)
-'''
+
 import numpy
 r = numpy.random.rand(3,3) #used to generate the values between 0 t0 10
 print(r)
-print(range)'''
+print(range)
 
 '''import numpy
 numpy.random.seed(10)
