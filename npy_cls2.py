@@ -1,10 +1,10 @@
-'''import numpy 
+import numpy 
 zeros = numpy.zeros((2,3)) #all the elements becomes zeros
 print(zeros)
 ones = numpy.ones((4,4)) #all the elements becomes ones
 print(ones)
 eye = numpy.eye(3) #digonal elementd becomes 1
-print(eye)'''
+print(eye)
 
 '''import numpy as np
 rand_int = np.random.randint(1,100,(3,3))
