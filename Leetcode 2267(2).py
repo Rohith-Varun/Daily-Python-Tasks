@@ -1,0 +1,34 @@
+from functools import cache
+
+class Solution:
+    def hasValidPath(self, grid: list[list[str]]) -> bool:
+        m, n = len(grid), len(grid[0])
+        
+        # Path length (m + n - 1) must be even for valid parentheses
+        if (m + n) % 2 == 0 or grid[0][0] == ')' or grid[m - 1][n - 1] == '(':
+            return False
+            
+        max_balance = (m + n) // 2
+
+        @cache
+        def dfs(r: int, c: int, balance: int) -> bool:
+            # Update open bracket balance
+            balance += 1 if grid[r][c] == '(' else -1
+            
+            # Invalid prefix (more ')' than '(') or exceeded maximum reachable balance
+            if balance < 0 or balance > max_balance:
+                return False
+            
+            # Destination cell reached
+            if r == m - 1 and c == n - 1:
+                return balance == 0
+            
+            # Explore Down and Right
+            if r + 1 < m and dfs(r + 1, c, balance):
+                return True
+            if c + 1 < n and dfs(r, c + 1, balance):
+                return True
+                
+            return False
+
+        return dfs(0, 0, 0)
