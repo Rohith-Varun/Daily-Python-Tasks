@@ -1,9 +1,7 @@
 class Solution:
-
   def maxDepthAfterSplit(self, seq: str) -> list[int]:
     ans = []
     depth = 0
-
     for char in seq:
       if char == '(':
         depth += 1
@@ -11,5 +9,4 @@ class Solution:
       else:
         ans.append(depth % 2)
         depth -= 1
-
     return ans
