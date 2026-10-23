@@ -2,9 +2,6 @@ import heapq
 class Solution:
     def mergeKLists(self, lists: list[ListNode | None]) -> ListNode | None:
         min_heap = []
-        
-        # Push the head of each non-empty list into the min-heap
-        # Include list index `i` as a tie-breaker for duplicate values
         for i, l in enumerate(lists):
             if l:
                 heapq.heappush(min_heap, (l.val, i, l))
