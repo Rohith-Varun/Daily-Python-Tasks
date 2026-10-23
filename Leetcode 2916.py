@@ -35,7 +35,5 @@ class Solution:
             prev = last.get(x, -1)
             update(1, 0, n - 1, prev + 1, i, 1)
             ans = (ans + sum2[1]) % MOD
-
             last[x] = i
-
         return ans
