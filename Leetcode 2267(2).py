@@ -1,9 +1,7 @@
 from functools import cache
-
 class Solution:
     def hasValidPath(self, grid: list[list[str]]) -> bool:
-        m, n = len(grid), len(grid[0])
-        
+        m, n = len(grid), len(grid[0])   
         # Path length (m + n - 1) must be even for valid parentheses
         if (m + n) % 2 == 0 or grid[0][0] == ')' or grid[m - 1][n - 1] == '(':
             return False
