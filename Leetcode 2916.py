@@ -4,19 +4,12 @@ class Solution:
         MOD = 10**9 + 7
         n = len(nums)
         size = 4 * n
-
         sum1 = [0] * size
         sum2 = [0] * size
         lazy = [0] * size
-
         def apply(node, l, r, v):
             length = r - l + 1
-            sum2[node] = (
-                sum2[node] + 2 * v * sum1[node] + length * v * v
-            ) % MOD
-            sum1[node] = (sum1[node] + length * v) % MOD
-            lazy[node] = (lazy[node] + v) % MOD
-
+            sum2[node] = (sum2[node] + 2 * v * sum1[node] + length * v * v) % MOD sum1[node] = (sum1[node] + length * v) % MOD lazy[node] = (lazy[node] + v) % MOD
         def push(node, l, r):
             if lazy[node] and l != r:
                 mid = (l + r) // 2
