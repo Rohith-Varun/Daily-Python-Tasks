@@ -1,8 +1,6 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         return haystack.find(needle)
-
-
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         n, m = len(haystack), len(needle)
