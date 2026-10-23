@@ -1,6 +1,4 @@
-
 from typing import List
-
 class Solution:
     def sumCounts(self, nums: List[int]) -> int:
         MOD = 10**9 + 7
