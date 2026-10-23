@@ -14,7 +14,5 @@ class Solution:
                 if bits[b] > 0:
                     num |= (1 << b)
                     bits[b] -= 1
-
             ans = (ans + num * num) % MOD
-
         return ans
