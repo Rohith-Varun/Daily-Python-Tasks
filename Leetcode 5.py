@@ -10,16 +10,10 @@ class Solution:
                 right += 1
             return right - left - 1
         for i in range(len(s)):
-
             len1 = expand(i, i)
- 
-            len2 = expand(i, i + 1)
-            
-            length = max(len1, len2)
-            
+            len2 = expand(i, i + 1)          
+            length = max(len1, len2)          
             if length > max_len:
-                max_len = length
-     
-                start = i - (length - 1) // 2
-                
+                max_len = length     
+                start = i - (length - 1) // 2                
         return s[start : start + max_len]
