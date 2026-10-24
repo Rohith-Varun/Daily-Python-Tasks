@@ -3,17 +3,11 @@ class Solution:
         res = []
         def backtrack(start: int):
             if start == len(nums):
-                res.append(nums[:])  # Append a copy of the current permutation
+                res.append(nums[:])
                 return
             for i in range(start, len(nums)):
-            
+                nums[start], nums[i] = nums[i], nums[start]            
+                backtrack(start + 1)                    
                 nums[start], nums[i] = nums[i], nums[start]
-                
-
-                backtrack(start + 1)
-                
-    
-                nums[start], nums[i] = nums[i], nums[start]
-
         backtrack(0)
         return res
