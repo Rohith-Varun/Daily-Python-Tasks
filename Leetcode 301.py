@@ -22,8 +22,6 @@ class Solution:
                 found = True
             if found:
                 continue
-
-
             for i in range(len(curr)):
                 if curr[i] not in ('(', ')'):
                     continue
@@ -31,5 +29,4 @@ class Solution:
                 if next_str not in visited:
                     visited.add(next_str)
                     queue.append(next_str)
-
         return result
