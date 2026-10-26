@@ -15,19 +15,15 @@ class Solution:
         visited = {s}
         result = []
         found = False
-
         while queue:
             curr = queue.popleft()
-
             if is_valid(curr):
                 result.append(curr)
                 found = True
-
-            # If we found a valid string at this depth, stop expanding further depths
             if found:
                 continue
 
-            # Generate next states by removing one parenthesis at a time
+
             for i in range(len(curr)):
                 if curr[i] not in ('(', ')'):
                     continue
