@@ -1,5 +1,4 @@
 from collections import deque
-
 class Solution:
     def removeInvalidParentheses(self, s: str) -> list[str]:
         def is_valid(string: str) -> bool:
@@ -12,7 +11,6 @@ class Solution:
                     if count < 0:
                         return False
             return count == 0
-
         queue = deque([s])
         visited = {s}
         result = []
