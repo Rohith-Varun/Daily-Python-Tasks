@@ -1,22 +1,18 @@
 class Solution:
     def countIslands(self, grid: List[List[int]], k: int) -> int:
         if not grid or not grid[0]:
-            return 0
-            
+            return 0          
         m, n = len(grid), len(grid[0])
         visited = [[False] * n for _ in range(m)]
-        valid_islands = 0
-        
-        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-        
+        valid_islands = 0        
+        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]        
         for r in range(m):
             for c in range(n):
                 if grid[r][c] > 0 and not visited[r][c]:
                     # Start BFS/DFS for the current island
                     current_sum = 0
                     stack = [(r, c)]
-                    visited[r][c] = True
-                    
+                    visited[r][c] = True                  
                     while stack:
                         curr_r, curr_c = stack.pop()
                         current_sum += grid[curr_r][curr_c]
