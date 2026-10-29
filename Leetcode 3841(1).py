@@ -38,7 +38,6 @@ class Solution:
             head[u] = h
             pos[u] = cur_pos
             cur_pos += 1           
-            # Push light children first so heavy child is processed last (popped first)
             hv = heavy[u]
             for v in reversed(adj[u]):
                 if v != parent[u]:
@@ -46,12 +45,10 @@ class Solution:
                         stack.append((v, h))
                     else:
                         stack.append((v, v))
-        # 3. Iterative Segment Tree setup (Power of 2 padding for speed)
         size = 1
         while size < n:
             size <<= 1         
         tree = [0] * (2 * size)        
-        # Initialize leaf nodes
         chars = [1 << (ord(char) - 97) for char in s]
         for i in range(n):
             tree[size + pos[i]] = chars[i]           
