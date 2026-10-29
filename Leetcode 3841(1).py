@@ -4,24 +4,20 @@ class Solution:
         for u, v in edges:
             adj[u].append(v)
             adj[v].append(u)
-
         parent = [0] * n
         depth = [0] * n
         heavy = [-1] * n
         head = [0] * n
         pos = [0] * n
-        
         # 1. First DFS to find subtree sizes, depths, and heavy children
         # Using an iterative approach or optimized recursive DFS
         stack = [(0, -1, 0, 0)] # u, p, d, state
         # To avoid recursion limit issues and overhead, we can use stack-based DFS for large trees
-        parent[0] = -1
-        
+        parent[0] = -1       
         # Standard recursive DFS is usually fine for depth if limit is raised, 
         # but let's use an optimized iterative post-order/pre-order traversal stack or standard DFS.
         import sys
         sys.setrecursionlimit(200000)
-
         def dfs1(u, p, d):
             parent[u] = p
             depth[u] = d
@@ -37,15 +33,12 @@ class Solution:
                         heavy_v = v
             heavy[u] = heavy_v
             return size
-
         dfs1(0, -1, 0)
-
         # 2. Second DFS to assign positions for HLD
         cur_pos = 0
         stack = [0]
         # Using iterative stack for dfs2 to avoid recursion overhead
-        head[0] = 0
-        
+        head[0] = 0        
         # Iterative HLD position assignment
         # We can simulate dfs2 using a stack of (u, h)
         stack = [(0, 0)]
@@ -53,8 +46,7 @@ class Solution:
             u, h = stack.pop()
             head[u] = h
             pos[u] = cur_pos
-            cur_pos += 1
-            
+            cur_pos += 1           
             # Push light children first so heavy child is processed last (popped first)
             hv = heavy[u]
             for v in reversed(adj[u]):
@@ -63,23 +55,18 @@ class Solution:
                         stack.append((v, h))
                     else:
                         stack.append((v, v))
-
         # 3. Iterative Segment Tree setup (Power of 2 padding for speed)
         size = 1
         while size < n:
-            size <<= 1
-            
-        tree = [0] * (2 * size)
-        
+            size <<= 1         
+        tree = [0] * (2 * size)        
         # Initialize leaf nodes
         chars = [1 << (ord(char) - 97) for char in s]
         for i in range(n):
-            tree[size + pos[i]] = chars[i]
-            
+            tree[size + pos[i]] = chars[i]           
         # Build tree iteratively
         for i in range(size - 1, 0, -1):
             tree[i] = tree[i << 1] ^ tree[(i << 1) | 1]
-
         def update(idx, val):
             i = size + pos[idx]
             tree[i] = val
@@ -87,7 +74,6 @@ class Solution:
             while i > 0:
                 tree[i] = tree[i << 1] ^ tree[(i << 1) | 1]
                 i >>= 1
-
         def query_range(l, r):
             res = 0
             l += size
@@ -102,7 +88,6 @@ class Solution:
                 l >>= 1
                 r >>= 1
             return res
-
         def get_path_xor(u, v):
             res = 0
             while head[u] != head[v]:
@@ -114,7 +99,6 @@ class Solution:
                 u, v = v, u
             res ^= query_range(pos[u], pos[v])
             return res
-
         ans = []
         app = ans.append
         for q in queries:
@@ -130,5 +114,4 @@ class Solution:
                 v = int(v_str)
                 path_mask = get_path_xor(u, v)
                 app((path_mask & (path_mask - 1)) == 0)
-
         return ans
