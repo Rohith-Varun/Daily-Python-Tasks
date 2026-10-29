@@ -9,7 +9,7 @@ class Solution:
         heavy = [-1] * n
         head = [0] * n
         pos = [0] * n
-        stack = [(0, -1, 0, 0)] # u, p, d, state
+        stack = [(0, -1, 0, 0)]
         parent[0] = -1       
         import sys
         sys.setrecursionlimit(200000)
@@ -31,10 +31,7 @@ class Solution:
         dfs1(0, -1, 0)
         cur_pos = 0
         stack = [0]
-        # Using iterative stack for dfs2 to avoid recursion overhead
         head[0] = 0        
-        # Iterative HLD position assignment
-        # We can simulate dfs2 using a stack of (u, h)
         stack = [(0, 0)]
         while stack:
             u, h = stack.pop()
