@@ -9,10 +9,7 @@ class Solution:
         heavy = [-1] * n
         head = [0] * n
         pos = [0] * n
-        # 1. First DFS to find subtree sizes, depths, and heavy children
-        # Using an iterative approach or optimized recursive DFS
         stack = [(0, -1, 0, 0)] # u, p, d, state
-        # To avoid recursion limit issues and overhead, we can use stack-based DFS for large trees
         parent[0] = -1       
         # Standard recursive DFS is usually fine for depth if limit is raised, 
         # but let's use an optimized iterative post-order/pre-order traversal stack or standard DFS.
