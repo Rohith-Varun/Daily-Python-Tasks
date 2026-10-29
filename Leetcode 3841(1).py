@@ -91,12 +91,10 @@ class Solution:
         app = ans.append
         for q in queries:
             if q[0] == 'u':
-                # fast parse for "update u c"
                 _, u_str, c = q.split()
                 u = int(u_str)
                 update(u, 1 << (ord(c) - 97))
             else:
-                # fast parse for "query u v"
                 _, u_str, v_str = q.split()
                 u = int(u_str)
                 v = int(v_str)
