@@ -34,7 +34,6 @@ class Solution:
         for u, v in edges:
             adj[u].append(v)
             adj[v].append(u)
-        # 1. First DFS to find subtree sizes, depths, parents, and heavy children
         parent = [0] * n
         depth = [0] * n
         heavy = [-1] * n
@@ -54,7 +53,6 @@ class Solution:
                         heavy[u] = v
             return size
         dfs1(0, -1, 0)
-        # 2. Second DFS to assign positions for HLD
         cur_pos = 0
         def dfs2(u, h):
             nonlocal cur_pos
@@ -67,7 +65,6 @@ class Solution:
                 if v != parent[u] and v != heavy[u]:
                     dfs2(v, v)
         dfs2(0, 0)
-        # Initialize Segment Tree with character masks
         init_vals = [0] * n
         for i in range(n):
             init_vals[pos[i]] = 1 << (ord(s[i]) - ord('a'))
@@ -95,7 +92,6 @@ class Solution:
                 u = int(parts[1])
                 v = int(parts[2])
                 path_mask = get_path_xor(u, v)
-                # Check if at most one bit is set
                 if (path_mask & (path_mask - 1)) == 0:
                     ans.append(True)
                 else:
