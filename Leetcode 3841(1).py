@@ -11,8 +11,6 @@ class Solution:
         pos = [0] * n
         stack = [(0, -1, 0, 0)] # u, p, d, state
         parent[0] = -1       
-        # Standard recursive DFS is usually fine for depth if limit is raised, 
-        # but let's use an optimized iterative post-order/pre-order traversal stack or standard DFS.
         import sys
         sys.setrecursionlimit(200000)
         def dfs1(u, p, d):
@@ -31,7 +29,6 @@ class Solution:
             heavy[u] = heavy_v
             return size
         dfs1(0, -1, 0)
-        # 2. Second DFS to assign positions for HLD
         cur_pos = 0
         stack = [0]
         # Using iterative stack for dfs2 to avoid recursion overhead
