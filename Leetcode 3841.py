@@ -3,7 +3,6 @@ class SegmentTree:
         self.n = n
         self.tree = [0] * (4 * n)
         self.build(1, 0, n - 1, init_vals)
-
     def build(self, node, start, end, init_vals):
         if start == end:
             self.tree[node] = init_vals[start]
@@ -12,7 +11,6 @@ class SegmentTree:
         self.build(2 * node, start, mid, init_vals)
         self.build(2 * node + 1, mid + 1, end, init_vals)
         self.tree[node] = self.tree[2 * node] ^ self.tree[2 * node + 1]
-
     def update(self, node, start, end, idx, val):
         if start == end:
             self.tree[node] = val
@@ -23,7 +21,6 @@ class SegmentTree:
         else:
             self.update(2 * node + 1, mid + 1, end, idx, val)
         self.tree[node] = self.tree[2 * node] ^ self.tree[2 * node + 1]
-
     def query(self, node, start, end, l, r):
         if r < start or end < l:
             return 0
@@ -31,8 +28,6 @@ class SegmentTree:
             return self.tree[node]
         mid = (start + end) // 2
         return self.query(2 * node, start, mid, l, r) ^ self.query(2 * node + 1, mid + 1, end, l, r)
-
-
 class Solution:
     def palindromePath(self, n: int, edges: list[list[int]], s: str, queries: list[str]) -> list[bool]:
         adj = [[] for _ in range(n)]
