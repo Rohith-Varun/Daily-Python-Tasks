@@ -2,12 +2,9 @@ import heapq
 from typing import List
 class Solution:
     def shortestPath(self, n: int, edges: List[List[int]], labels: str, k: int) -> int:
-        # Build adjacency list: u -> list of (v, w)
         graph = [[] for _ in range(n)]
         for u, v, w in edges:
             graph[u].append((v, w))          
-        # Min-heap stores: (dist, node, consecutive_count)
-        # Starting at node 0 with consecutive count 1 (since it has labels[0])
         pq = [(0, 0, 1)]      
         # Distance dictionary or 2D array to track minimum cost for state (node, count)
         # Using a dictionary for sparse state representation
