@@ -32,6 +32,5 @@ class Solution:
                 new_dist = d + w
                 if new_dist < dist.get((v, next_count), float('inf')):
                     dist[(v, next_count)] = new_dist
-                    heapq.heappush(pq, (new_dist, v, next_count))
-                    
+                    heapq.heappush(pq, (new_dist, v, next_count))                  
         return -1
