@@ -31,16 +31,12 @@ class Solution:
                         continue
                     if i == 0 and j == 0:
                         continue                   
-                    # Choice 0: move right -> next cell is (i, j+1) entering with d=0
                     nxt = get_next(i, j + 1, 0)
                     if nxt:
                         ni, nj, nd = nxt
                         dp[ni][nj][nd] = (dp[ni][nj][nd] + ways) % MOD                      
-                    # Choice 1: move down -> next cell is (i+1, j) entering with d=1
                     nxt = get_next(i + 1, j, 1)
                     if nxt:
                         ni, nj, nd = nxt
                         dp[ni][nj][nd] = (dp[ni][nj][nd] + ways) % MOD
-
-        # Sum all ways arriving at the bottom-right corner (m-1, n-1)
         return (dp[m - 1][n - 1][0] + dp[m - 1][n - 1][1]) % MOD
