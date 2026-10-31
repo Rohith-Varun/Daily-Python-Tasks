@@ -3,23 +3,18 @@ class Solution:
     def uniquePaths(self, grid: List[List[int]]) -> int:
         MOD = 10**9 + 7
         m, n = len(grid), len(grid[0])      
-        # Helper to simulate the reflection chain
         def get_next(r: int, c: int, d: int):
-            # d = 0: moving right, d = 1: moving down
             while 0 <= r < m and 0 <= c < n and grid[r][c] == 1:
                 if d == 0:
-                    r += 1  # turned down
+                    r += 1
                     d = 1
                 else:
-                    c += 1  # turned right
+                    c += 1
                     d = 0
             if not (0 <= r < m and 0 <= c < n):
                 return None
             return (r, c, d)
-        # dp[i][j][d] -> number of ways to enter cell (i, j) with direction d
-        # d = 0 (moving right), d = 1 (moving down)
         dp = [[[0, 0] for _ in range(n)] for _ in range(m)]       
-        # Initial states from starting point (0, 0)
         res_right = get_next(0, 1, 0)
         if res_right:
             r, c, d = res_right
