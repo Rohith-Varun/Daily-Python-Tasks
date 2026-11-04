@@ -8,15 +8,12 @@ class Solution:
         cnt = [0] * (m + 1)
         sm = [0] * (m + 1)
         LOG = m.bit_length()
-
         def upd(i, c, s):
             while i <= m:
                 cnt[i] += c
                 sm[i] += s
                 i += i & -i
-
-        kk = (x + 1) // 2  # median is the kk-th smallest in the window
-
+        kk = (x + 1) // 2  
         def window_cost(total):
             # Binary descent: largest pos whose prefix count < kk
             pos = c = s = 0
