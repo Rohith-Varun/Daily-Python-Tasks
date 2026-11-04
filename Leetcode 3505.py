@@ -15,7 +15,6 @@ class Solution:
                 i += i & -i
         kk = (x + 1) // 2  
         def window_cost(total):
-            # Binary descent: largest pos whose prefix count < kk
             pos = c = s = 0
             for p in range(LOG, -1, -1):
                 np_ = pos + (1 << p)
@@ -23,9 +22,9 @@ class Solution:
                     pos = np_
                     c += cnt[np_]
                     s += sm[np_]
-            v = vals[pos]                  # median value
-            left = s + (kk - c) * v        # sum of the kk smallest elements
-            right = total - left           # sum of the other x - kk elements
+            v = vals[pos]
+            left = s + (kk - c) * v
+            right = total - left
             return v * kk - left + right - v * (x - kk)
 
         # ---- cost[i] = cost to make nums[i..i+x-1] all equal ----
