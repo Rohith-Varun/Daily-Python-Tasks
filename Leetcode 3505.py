@@ -26,8 +26,6 @@ class Solution:
             left = s + (kk - c) * v
             right = total - left
             return v * kk - left + right - v * (x - kk)
-
-        # ---- cost[i] = cost to make nums[i..i+x-1] all equal ----
         cost = []
         total = 0
         for i in range(n):
@@ -38,7 +36,6 @@ class Solution:
                 total -= nums[i - x]
             if i >= x - 1:
                 cost.append(window_cost(total))
-
         # ---- DP: pick k non-overlapping windows ----
         INF = float('inf')
         prev = [0] * (n + 1)               # 0 windows -> cost 0
