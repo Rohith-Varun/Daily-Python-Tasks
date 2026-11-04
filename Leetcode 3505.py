@@ -5,8 +5,6 @@ class Solution:
         vals = sorted(set(nums))
         idx = {v: i + 1 for i, v in enumerate(vals)}
         m = len(vals)
-
-        # ---- Fenwick trees: counts and sums over compressed values ----
         cnt = [0] * (m + 1)
         sm = [0] * (m + 1)
         LOG = m.bit_length()
