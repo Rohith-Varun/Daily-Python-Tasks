@@ -1,11 +1,7 @@
 from typing import List
-
-
 class Solution:
     def minOperations(self, nums: List[int], x: int, k: int) -> int:
         n = len(nums)
-
-        # ---- Coordinate compression ----
         vals = sorted(set(nums))
         idx = {v: i + 1 for i, v in enumerate(vals)}
         m = len(vals)
