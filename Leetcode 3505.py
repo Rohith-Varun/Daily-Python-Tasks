@@ -36,9 +36,8 @@ class Solution:
                 total -= nums[i - x]
             if i >= x - 1:
                 cost.append(window_cost(total))
-        # ---- DP: pick k non-overlapping windows ----
         INF = float('inf')
-        prev = [0] * (n + 1)               # 0 windows -> cost 0
+        prev = [0] * (n + 1)
         for _ in range(k):
             cur = [INF] * (n + 1)
             for i in range(x, n + 1):
