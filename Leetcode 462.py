@@ -3,6 +3,4 @@ class Solution:
         nums.sort()
         n = len(nums)
         median = nums[n // 2]
-        
-        # Sum of absolute differences from the median
         return sum(abs(num - median) for num in nums)
