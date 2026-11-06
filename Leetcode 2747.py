@@ -16,9 +16,7 @@ class Solution:
                 if server_counts.get(server_id, 0) == 0:
                     active_servers += 1
                 server_counts[server_id] = server_counts.get(server_id, 0) + 1
-                r += 1
-                
-            # Remove logs that fall outside the window (before window_start)
+                r += 1                
             while l < len(logs) and logs[l][1] < window_start:
                 server_id = logs[l][0]
                 server_counts[server_id] -= 1
