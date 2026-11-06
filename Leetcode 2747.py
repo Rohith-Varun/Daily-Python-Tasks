@@ -23,8 +23,5 @@ class Solution:
                 if server_counts[server_id] == 0:
                     active_servers -= 1
                 l += 1
-                
-            # Zero-request servers = Total servers (n) - Active servers in the window
-            ans[q_idx] = n - active_servers
-            
+            ans[q_idx] = n - active_servers          
         return ans
