@@ -1,24 +1,16 @@
 from typing import List
-
 class Solution:
     def countServers(self, n: int, logs: List[List[int]], x: int, queries: List[int]) -> List[int]:
-        # Sort logs by their timestamps
-        logs.sort(key=lambda x: x[1])
-        
-        # Pair each query with its original index so we can restore the original order
+        logs.sort(key=lambda x: x[1])        
         sorted_queries = sorted(enumerate(queries), key=lambda x: x[1])
-        
         ans = [0] * len(queries)
         l = 0
         r = 0
         server_counts = {}
-        active_servers = 0
-        
+        active_servers = 0   
         for q_idx, q_time in sorted_queries:
             window_start = q_time - x
-            window_end = q_time
-            
-            # Add logs that fall within the current window ending at window_end
+            window_end = q_time       
             while r < len(logs) and logs[r][1] <= window_end:
                 server_id = logs[r][0]
                 if server_counts.get(server_id, 0) == 0:
