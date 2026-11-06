@@ -14,9 +14,5 @@ class Solution:
                 high += 1 
             if high < 0:
                 return False
-            
-            # Reset low if it goes negative (treating '*' as empty instead of ')')
             low = max(low, 0)
-            
-        # Return boolean directly without trailing comma
         return low == 0
