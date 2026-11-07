@@ -1,11 +1,11 @@
 import heapq
 class Solution:
     def assignTasks(self, servers: list[int], tasks: list[int]) -> list[int]:
-        # Min-heap for available servers: stores (weight, index)
+        
         available = [(servers[i], i) for i in range(len(servers))]
         heapq.heapify(available)
         
-        # Min-heap for unavailable servers: stores (free_time, weight, index)
+        
         unavailable = []
         ans = []
         t = 0
