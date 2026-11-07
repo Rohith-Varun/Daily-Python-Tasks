@@ -19,8 +19,5 @@ class Solution:
             
             weight, index = heapq.heappop(available)
             ans.append(index)
-            
-            
             heapq.heappush(unavailable, (t + task_time, weight, index))
-            
         return ans
