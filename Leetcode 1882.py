@@ -1,5 +1,4 @@
 import heapq
-
 class Solution:
     def assignTasks(self, servers: list[int], tasks: list[int]) -> list[int]:
         # Min-heap for available servers: stores (weight, index)
@@ -8,10 +7,8 @@ class Solution:
         
         # Min-heap for unavailable servers: stores (free_time, weight, index)
         unavailable = []
-        
         ans = []
         t = 0
-        
         for j, task_time in enumerate(tasks):
             # Time cannot be less than the current task arrival time
             t = max(t, j)
