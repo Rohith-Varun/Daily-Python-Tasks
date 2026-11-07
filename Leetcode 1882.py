@@ -17,16 +17,16 @@ class Solution:
             if not available and unavailable[0][0] > t:
                 t = unavailable[0][0]
             
-            # Release all servers that become free by time t
+            
             while unavailable and unavailable[0][0] <= t:
                 free_time, weight, index = heapq.heappop(unavailable)
                 heapq.heappush(available, (weight, index))
             
-            # Assign the task to the best available server
+            
             weight, index = heapq.heappop(available)
             ans.append(index)
             
-            # Push the server to unavailable with its release time
+            
             heapq.heappush(unavailable, (t + task_time, weight, index))
             
         return ans
