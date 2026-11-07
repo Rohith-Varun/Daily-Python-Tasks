@@ -10,10 +10,10 @@ class Solution:
         ans = []
         t = 0
         for j, task_time in enumerate(tasks):
-            # Time cannot be less than the current task arrival time
+            
             t = max(t, j)
             
-            # If no servers are available, fast-forward time to when the next server frees up
+            
             if not available and unavailable[0][0] > t:
                 t = unavailable[0][0]
             
