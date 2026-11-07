@@ -7,10 +7,7 @@ class Solution:
         ans = []
         t = 0
         for j, task_time in enumerate(tasks):
-            
             t = max(t, j)
-            
-            
             if not available and unavailable[0][0] > t:
                 t = unavailable[0][0]
             
