@@ -3,7 +3,6 @@ class Solution:
     m, n = len(grid), len(grid[0])
     row_count = [0] * m
     col_count = [0] * n
-    
     for i in range(m):
       for j in range(n):
         if grid[i][j] == 1:
