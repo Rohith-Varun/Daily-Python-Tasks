@@ -14,5 +14,4 @@ class Solution:
         if grid[i][j] == 1:
           if row_count[i] > 1 or col_count[j] > 1:
             communicating_servers += 1
-
     return communicating_servers
