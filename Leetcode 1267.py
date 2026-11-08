@@ -3,7 +3,7 @@ class Solution:
     m, n = len(grid), len(grid[0])
     row_count = [0] * m
     col_count = [0] * n
-    # Step 1: Count the number of servers in each row and each column
+    
     for i in range(m):
       for j in range(n):
         if grid[i][j] == 1:
