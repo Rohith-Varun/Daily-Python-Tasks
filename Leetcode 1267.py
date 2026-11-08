@@ -1,5 +1,4 @@
 class Solution:
-
   def countServers(self, grid: list[list[int]]) -> int:
     m, n = len(grid), len(grid[0])
     row_count = [0] * m
