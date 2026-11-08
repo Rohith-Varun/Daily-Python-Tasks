@@ -8,7 +8,7 @@ class Solution:
         if grid[i][j] == 1:
           row_count[i] += 1
           col_count[j] += 1
-    # Step 2: Count servers that can communicate
+    
     communicating_servers = 0
     for i in range(m):
       for j in range(n):
