@@ -6,10 +6,9 @@ class Solution:
         available_servers = list(range(k))
         request_count = [0] * k
         for j, (arr, ld) in enumerate(zip(arrival, load)):
-            
             while busy_servers and busy_servers[0][0] <= arr:
                 _, server_id = heapq.heappop(busy_servers)
-                # Insert back maintaining sorted order
+                # Insert back maintaining sorted orde
                 idx = bisect.bisect_left(available_servers, server_id)
                 available_servers.insert(idx, server_id)
             
