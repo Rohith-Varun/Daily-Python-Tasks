@@ -18,7 +18,6 @@ class Solution:
                 server_id = available_servers.pop(0)
             else:
                 server_id = available_servers.pop(idx)
-            
             # Assign the request to the chosen server
             request_count[server_id] += 1
             heapq.heappush(busy_servers, (arr + ld, server_id))
