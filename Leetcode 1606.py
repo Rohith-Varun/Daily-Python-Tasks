@@ -2,7 +2,7 @@ import bisect
 import heapq
 class Solution:
     def busiestServers(self, k: int, arrival: list[int], load: list[int]) -> list[int]:
-        busy_servers = []  # Min-heap storing (release_time, server_id)
+        busy_servers = []
         available_servers = list(range(k))  # Sorted list acting as an ordered set of available servers
         request_count = [0] * k
         
