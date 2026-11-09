@@ -12,7 +12,7 @@ class Solution:
                 available_servers.insert(idx, server_id)
             if not available_servers:
                 continue
-            # Find the preferred starting server index (j % k)
+            
             preferred = j % k
             idx = bisect.bisect_left(available_servers, preferred)
             
