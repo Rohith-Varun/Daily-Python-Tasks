@@ -10,7 +10,6 @@ class Solution:
                 _, server_id = heapq.heappop(busy_servers)
                 idx = bisect.bisect_left(available_servers, server_id)
                 available_servers.insert(idx, server_id)
-            
             if not available_servers:
                 # All servers are busy, drop this request
                 continue
