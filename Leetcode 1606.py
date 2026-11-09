@@ -11,7 +11,7 @@ class Solution:
                 idx = bisect.bisect_left(available_servers, server_id)
                 available_servers.insert(idx, server_id)
             if not available_servers:
-                # All servers are busy, drop this request
+                
                 continue
             
             # Find the preferred starting server index (j % k)
