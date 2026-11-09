@@ -20,6 +20,5 @@ class Solution:
                 server_id = available_servers.pop(idx)
             request_count[server_id] += 1
             heapq.heappush(busy_servers, (arr + ld, server_id))
-            
         max_requests = max(request_count)
         return [i for i, count in enumerate(request_count) if count == max_requests]
