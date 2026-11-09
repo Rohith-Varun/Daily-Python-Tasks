@@ -8,7 +8,6 @@ class Solution:
         for j, (arr, ld) in enumerate(zip(arrival, load)):
             while busy_servers and busy_servers[0][0] <= arr:
                 _, server_id = heapq.heappop(busy_servers)
-                
                 idx = bisect.bisect_left(available_servers, server_id)
                 available_servers.insert(idx, server_id)
             
