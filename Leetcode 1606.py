@@ -15,7 +15,7 @@ class Solution:
             preferred = j % k
             idx = bisect.bisect_left(available_servers, preferred)
             if idx == len(available_servers):
-                # Wrap around to the beginning of the available servers list
+                
                 server_id = available_servers.pop(0)
             else:
                 server_id = available_servers.pop(idx)
