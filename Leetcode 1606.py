@@ -5,7 +5,6 @@ class Solution:
         busy_servers = []
         available_servers = list(range(k))
         request_count = [0] * k
-        
         for j, (arr, ld) in enumerate(zip(arrival, load)):
             # Free up servers whose tasks are completed by the current arrival time
             while busy_servers and busy_servers[0][0] <= arr:
