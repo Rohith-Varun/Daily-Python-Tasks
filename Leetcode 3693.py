@@ -1,6 +1,6 @@
 class Solution:
     def climbStairs(self, n: int, costs: List[int]) -> int:
-        # since transitions only depend on i in {j-1, j-2, j-3}.
+        
         
         dp = [0] * (n + 1)
         
