@@ -1,6 +1,6 @@
 class Solution:
     def climbStairs(self, n: int, costs: List[int]) -> int:
-        # dp[j] represents the minimum cost to reach step j.
+        
         # Steps are 0 to n, so there are n + 1 steps.
         # We use a rolling array/list of size 4 to keep track of the last 3 states
         # since transitions only depend on i in {j-1, j-2, j-3}.
