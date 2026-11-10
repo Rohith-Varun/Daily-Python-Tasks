@@ -3,7 +3,6 @@ class Solution:
         dp = [0] * (n + 1)
         for j in range(1, n + 1):
             min_cost = float('inf')
-            
             for k in range(1, 4):
                 i = j - k
                 if i >= 0:
