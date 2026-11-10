@@ -1,7 +1,6 @@
 class Solution:
     def climbStairs(self, n: int, costs: List[int]) -> int:
         dp = [0] * (n + 1)
-        
         for j in range(1, n + 1):
             min_cost = float('inf')
             # Check previous steps j-1, j-2, j-3 if they exist (>= 0)
