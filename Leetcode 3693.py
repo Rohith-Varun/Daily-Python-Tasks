@@ -10,5 +10,4 @@ class Solution:
                     if cost < min_cost:
                         min_cost = cost
             dp[j] = min_cost
-            
         return dp[n]
