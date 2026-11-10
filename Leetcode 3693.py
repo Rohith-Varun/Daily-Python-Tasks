@@ -1,6 +1,5 @@
 class Solution:
     def climbStairs(self, n: int, costs: List[int]) -> int:
-        
         dp = [0] * (n + 1)
         
         for j in range(1, n + 1):
