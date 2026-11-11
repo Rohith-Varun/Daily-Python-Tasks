@@ -5,7 +5,6 @@ class Solution:
     dual_cost = min(costBoth, cost1 + cost2)
     shared_need = min(need1, need2)
     total_cost = shared_need * dual_cost
-    
     # costs min(costBoth, cost1).
     rem1 = need1 - shared_need
     if rem1 > 0:
