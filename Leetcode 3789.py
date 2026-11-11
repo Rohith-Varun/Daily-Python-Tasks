@@ -11,5 +11,4 @@ class Solution:
     rem2 = need2 - shared_need
     if rem2 > 0:
       total_cost += rem2 * min(costBoth, cost2)
-
     return total_cost
