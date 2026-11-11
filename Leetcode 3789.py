@@ -2,7 +2,7 @@ class Solution:
   def minimumCost(
       self, cost1: int, cost2: int, costBoth: int, need1: int, need2: int
   ) -> int:
-    # 1. To get 1 unit of type 1 and 1 unit of type 2, buying one type 3 item
+    
     # costs `costBoth`. Alternatively, we could buy one type 1 item and one type 2 item,
     # which costs `cost1 + cost2`. We should always take the cheaper option for dual contributions.
     dual_cost = min(costBoth, cost1 + cost2)
