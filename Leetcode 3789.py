@@ -8,7 +8,7 @@ class Solution:
     rem1 = need1 - shared_need
     if rem1 > 0:
       total_cost += rem1 * min(costBoth, cost1)
-    # costs min(costBoth, cost2).
+    
     rem2 = need2 - shared_need
     if rem2 > 0:
       total_cost += rem2 * min(costBoth, cost2)
