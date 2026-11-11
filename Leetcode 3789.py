@@ -5,7 +5,6 @@ class Solution:
     dual_cost = min(costBoth, cost1 + cost2)
     shared_need = min(need1, need2)
     total_cost = shared_need * dual_cost
-    
     # For any leftover requirement of type 1, buying a type 3 item or a type 1 item
     # costs min(costBoth, cost1).
     rem1 = need1 - shared_need
