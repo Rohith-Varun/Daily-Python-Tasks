@@ -3,7 +3,6 @@ class Solution:
       self, cost1: int, cost2: int, costBoth: int, need1: int, need2: int
   ) -> int:
     dual_cost = min(costBoth, cost1 + cost2)
-
     # 2. To fulfill the shared requirement (the minimum of need1 and need2),
     # we can use the optimal dual items.
     shared_need = min(need1, need2)
