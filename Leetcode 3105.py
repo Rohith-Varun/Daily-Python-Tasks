@@ -6,7 +6,6 @@ class Solution:
         max_len = 1
         inc_len = 1
         dec_len = 1
-        
         for i in range(1, n):
             if nums[i] > nums[i - 1]:
                 inc_len += 1
