@@ -20,5 +20,4 @@ class Solution:
                 max_len = inc_len
             if dec_len > max_len:
                 max_len = dec_len
-                
         return max_len
