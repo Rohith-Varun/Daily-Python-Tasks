@@ -2,8 +2,7 @@ class Solution:
     def longestMonotonicSubarray(self, nums: List[int]) -> int:
         n = len(nums)
         if n <= 1:
-            return n
-            
+            return n    
         max_len = 1
         inc_len = 1
         dec_len = 1
