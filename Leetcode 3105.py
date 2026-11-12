@@ -16,7 +16,6 @@ class Solution:
             else:
                 inc_len = 1
                 dec_len = 1
-                
             if inc_len > max_len:
                 max_len = inc_len
             if dec_len > max_len:
