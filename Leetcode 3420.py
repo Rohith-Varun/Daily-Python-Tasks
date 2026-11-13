@@ -14,7 +14,6 @@ class Solution:
                 r = dq[-1] if dq else j + 1
                 cost += (r - l) * (num - nums[l])
             dq.append(i)
-            
             while cost > k:
                 cost -= nums[dq[0]] - nums[j]
                 if dq[0] == j:
