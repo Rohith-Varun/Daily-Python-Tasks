@@ -20,5 +20,4 @@ class Solution:
                     dq.popleft()
                 j -= 1
             ans += (j - i + 1)
-            
         return ans
