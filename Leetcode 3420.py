@@ -13,7 +13,6 @@ class Solution:
                 l = dq.pop()
                 r = dq[-1] if dq else j + 1
                 cost += (r - l) * (num - nums[l])
-            
             dq.append(i)
             
             # Shrink window from the right if cost exceeds k
