@@ -19,7 +19,6 @@ class Solution:
                 if dq[0] == j:
                     dq.popleft()
                 j -= 1
-            
             ans += (j - i + 1)
             
         return ans
