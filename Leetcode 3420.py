@@ -7,7 +7,6 @@ class Solution:
         cost = 0
         dq = deque()
         j = n - 1
-        
         for i in range(n - 1, -1, -1):
             num = nums[i]
             while dq and nums[dq[-1]] < num:
