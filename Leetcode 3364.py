@@ -4,8 +4,7 @@ class Solution:
     pref = list(accumulate(nums, initial=0))
     n = len(nums)
     return min(
-        (
-            diff
+        ( diff
             for i in range(n - l + 1)
             for p_j in pref[i + l : i + r + 1]
             if (diff := p_j - pref[i]) > 0
