@@ -5,7 +5,6 @@ class Solution:
         even_count = 1  
         current_sum = 0
         ans = 0
-        
         for num in arr:
             current_sum += num
             if current_sum % 2 == 1:
