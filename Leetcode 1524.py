@@ -2,7 +2,7 @@ class Solution:
     def numOfSubarrays(self, arr: list[int]) -> int:
         MOD = 10**9 + 7
         odd_count = 0
-        even_count = 1  # prefix sum 0 
+        even_count = 1  # prefix sum
         current_sum = 0
         ans = 0
         
