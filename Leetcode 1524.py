@@ -14,5 +14,4 @@ class Solution:
                 ans += odd_count
                 even_count += 1
             ans %= MOD
-            
         return ans
