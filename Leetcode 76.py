@@ -9,7 +9,6 @@ class Solution:
         window_counts = {}
         ans = float("inf"), None, None
         l, r = 0, 0
-        
         while r < len(s):
             char = s[r]
             window_counts[char] = window_counts.get(char, 0) + 1
