@@ -23,5 +23,4 @@ class Solution:
                     formed -= 1  
                 l += 1
             r += 1
-            
         return "" if ans[0] == float("inf") else s[ans[1] : ans[2] + 1]
