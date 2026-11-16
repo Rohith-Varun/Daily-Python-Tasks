@@ -1,13 +1,11 @@
 class Solution:
     def generateTrees(self, n: int) -> list[TreeNode | None]:
         memo = {}
-
         def build_trees(start: int, end: int) -> list[TreeNode | None]:
             if start > end:
                 return [None]
             if (start, end) in memo:
                 return memo[(start, end)]
-
             all_trees = []
             # Iterate through each number to act as the root
             for root_val in range(start, end + 1):
