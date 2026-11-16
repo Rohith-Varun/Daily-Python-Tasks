@@ -3,7 +3,7 @@ class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if not t or not s:
             return ""
-        # Dictionary to keep track of counts of all characters in t
+        
         dict_t = Counter(t)
         required = len(dict_t)
         
