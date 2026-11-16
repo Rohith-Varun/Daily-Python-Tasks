@@ -8,7 +8,6 @@ class Solution:
                 return memo[(start, end)]
             all_trees = []
             for root_val in range(start, end + 1):
-                
                 left_trees = build_trees(start, root_val - 1)
                 right_trees = build_trees(root_val + 1, end)
 
