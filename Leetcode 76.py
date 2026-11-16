@@ -7,7 +7,7 @@ class Solution:
         required = len(dict_t)
         formed = 0
         window_counts = {}
-        # Tuple format: (window_length, left, right)
+    
         ans = float("inf"), None, None
         l, r = 0, 0
         
