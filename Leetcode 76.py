@@ -14,7 +14,6 @@ class Solution:
             window_counts[char] = window_counts.get(char, 0) + 1
             if char in dict_t and window_counts[char] == dict_t[char]:
                 formed += 1
-                
             while l <= r and formed == required:
                 char = s[l]
                 
