@@ -7,7 +7,7 @@ class Solution:
             if (start, end) in memo:
                 return memo[(start, end)]
             all_trees = []
-            # Iterate through each number to act as the root
+            
             for root_val in range(start, end + 1):
                 # Generate all possible left and right subtrees
                 left_trees = build_trees(start, root_val - 1)
