@@ -20,8 +20,7 @@ class Solution:
                     ans = (r - l + 1, l, r)
                 window_counts[char] -= 1
                 if char in dict_t and window_counts[char] < dict_t[char]:
-                    formed -= 1
-                    
+                    formed -= 1  
                 l += 1
                 
             r += 1
