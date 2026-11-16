@@ -3,7 +3,6 @@ class Solution:
     def sumCounts(self, nums: List[int]) -> int:
         n = len(nums)
         ans = 0
-
         for i in range(n):
             distinct = set()
 
