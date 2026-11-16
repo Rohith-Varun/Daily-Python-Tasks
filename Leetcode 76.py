@@ -1,5 +1,4 @@
 from collections import Counter
-
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if not t or not s:
