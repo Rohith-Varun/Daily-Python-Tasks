@@ -10,7 +10,7 @@ class Solution:
             for root_val in range(start, end + 1):
                 left_trees = build_trees(start, root_val - 1)
                 right_trees = build_trees(root_val + 1, end)
-                # Combine every left subtree with every right subtree under root_val
+                
                 for left in left_trees:
                     for right in right_trees:
                         root = TreeNode(root_val, left, right)
