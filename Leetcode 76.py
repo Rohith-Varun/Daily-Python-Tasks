@@ -16,7 +16,6 @@ class Solution:
                 formed += 1
             while l <= r and formed == required:
                 char = s[l]
-                
                 if r - l + 1 < ans[0]:
                     ans = (r - l + 1, l, r)
                     
