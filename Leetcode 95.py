@@ -14,8 +14,6 @@ class Solution:
                     for right in right_trees:
                         root = TreeNode(root_val, left, right)
                         all_trees.append(root)
-
             memo[(start, end)] = all_trees
             return all_trees
-
         return build_trees(1, n)
