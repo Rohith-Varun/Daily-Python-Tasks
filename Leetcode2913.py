@@ -9,5 +9,4 @@ class Solution:
                 distinct.add(nums[j])
                 count = len(distinct)
                 ans += count * count
-
         return ans
