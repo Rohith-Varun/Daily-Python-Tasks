@@ -22,7 +22,6 @@ class Solution:
                 if char in dict_t and window_counts[char] < dict_t[char]:
                     formed -= 1  
                 l += 1
-                
             r += 1
             
         return "" if ans[0] == float("inf") else s[ans[1] : ans[2] + 1]
