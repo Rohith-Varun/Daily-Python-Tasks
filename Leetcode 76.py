@@ -5,7 +5,6 @@ class Solution:
             return ""
         dict_t = Counter(t)
         required = len(dict_t)
-        
         # Counter to keep track of how many unique characters are currently matched
         formed = 0
         window_counts = {}
