@@ -5,7 +5,6 @@ class Solution:
         ans = 0
         for i in range(n):
             distinct = set()
-
             for j in range(i, n):
                 distinct.add(nums[j])
                 count = len(distinct)
