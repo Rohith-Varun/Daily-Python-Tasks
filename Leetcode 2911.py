@@ -38,7 +38,6 @@ class Solution:
             ans = float("inf")
             for x in range(i, n - rem):
                 ans = min(ans, cost[i][x] + dp(x + 1, rem - 1))
-
             memo[(i, rem)] = ans
             return ans
 
