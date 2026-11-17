@@ -1,7 +1,7 @@
 class Solution:
     def minimumChanges(self, s: str, k: int) -> int:
         n = len(s)
-        # Precompute divisors for each length from 1 to n
+        
         divs = [[] for _ in range(n + 1)]
         for length in range(1, n + 1):
             for d in range(1, length):
