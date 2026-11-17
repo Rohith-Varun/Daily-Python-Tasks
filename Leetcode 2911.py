@@ -36,8 +36,6 @@ class Solution:
             if (i, rem) in memo:
                 return memo[(i, rem)]
             ans = float("inf")
-            
-            
             for x in range(i, n - rem):
                 ans = min(ans, cost[i][x] + dp(x + 1, rem - 1))
 
