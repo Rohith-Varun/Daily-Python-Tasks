@@ -22,7 +22,7 @@ class Solution:
                 min_c = float("inf")
                 for d in divs[length]:
                     current_cost = 0
-                    # Check each of the d groups
+            
                     for start in range(d):
                         group = []
                         for idx in range(start, length, d):
