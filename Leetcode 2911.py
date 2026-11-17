@@ -35,7 +35,6 @@ class Solution:
                 return cost[i][n - 1]
             if (i, rem) in memo:
                 return memo[(i, rem)]
-
             ans = float("inf")
             # Try all possible ending points x for the first of the 'rem' substrings
             # Ensure remaining characters are enough for the remaining (rem - 1) parts
