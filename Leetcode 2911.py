@@ -40,5 +40,4 @@ class Solution:
                 ans = min(ans, cost[i][x] + dp(x + 1, rem - 1))
             memo[(i, rem)] = ans
             return ans
-
         return dp(0, k)
