@@ -6,7 +6,7 @@ class Solution:
             for d in range(1, length):
                 if length % d == 0:
                     divs[length].append(d)
-        # Helper to calculate changes to make a group a palindrome
+        
         def palindrome_changes(sub):
             changes = 0
             l, r = 0, len(sub) - 1
