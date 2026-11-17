@@ -15,7 +15,6 @@ class Solution:
                 l += 1
                 r -= 1
             return changes
-        
         cost = [[float("inf")] * n for _ in range(n)]
 
         for i in range(n):
