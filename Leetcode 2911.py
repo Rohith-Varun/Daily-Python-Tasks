@@ -37,7 +37,7 @@ class Solution:
                 return memo[(i, rem)]
             ans = float("inf")
             
-            # Ensure remaining characters are enough for the remaining (rem - 1) parts
+            
             for x in range(i, n - rem):
                 ans = min(ans, cost[i][x] + dp(x + 1, rem - 1))
 
