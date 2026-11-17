@@ -30,7 +30,6 @@ class Solution:
                     min_c = min(min_c, current_cost)
                 cost[i][j] = min_c
         memo = {}
-
         def dp(i, rem):
             if rem == 1:
                 return cost[i][n - 1]
