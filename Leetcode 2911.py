@@ -36,7 +36,7 @@ class Solution:
             if (i, rem) in memo:
                 return memo[(i, rem)]
             ans = float("inf")
-            # Try all possible ending points x for the first of the 'rem' substrings
+            
             # Ensure remaining characters are enough for the remaining (rem - 1) parts
             for x in range(i, n - rem):
                 ans = min(ans, cost[i][x] + dp(x + 1, rem - 1))
