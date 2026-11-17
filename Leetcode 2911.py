@@ -29,7 +29,6 @@ class Solution:
                         current_cost += palindrome_changes(group)
                     min_c = min(min_c, current_cost)
                 cost[i][j] = min_c
-        
         memo = {}
 
         def dp(i, rem):
