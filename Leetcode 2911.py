@@ -16,7 +16,6 @@ class Solution:
                 r -= 1
             return changes
         cost = [[float("inf")] * n for _ in range(n)]
-
         for i in range(n):
             for j in range(i + 1, n):
                 length = j - i + 1
