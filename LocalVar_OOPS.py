@@ -5,4 +5,3 @@ class Test:
 t = Test()
 t.M1()
 print(t.M1())
-#print(x)
