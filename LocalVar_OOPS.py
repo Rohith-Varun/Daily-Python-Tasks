@@ -4,6 +4,5 @@ class Test:
         print("Value of x is :",x)
 t = Test()
 t.M1()
-
 print(t.M1())
 #print(x)
