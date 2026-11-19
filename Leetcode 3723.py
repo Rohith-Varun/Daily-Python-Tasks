@@ -2,7 +2,6 @@ class Solution:
     def maxSumOfSquares(self, num: int, sum: int) -> str:
         if sum > 9 * num:
             return ""
-
         if sum == 0:
             return "0" if num == 1 else ""
 
