@@ -10,7 +10,6 @@ class Solution:
             digit = min(9, remaining)
             digits.append(str(digit))
             remaining -= digit
-
         if remaining > 0:
             return ""
 
