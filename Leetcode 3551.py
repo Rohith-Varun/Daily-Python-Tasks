@@ -7,7 +7,6 @@ class Solution:
                 s += x % 10
                 x //= 10
             return s
-
         # order[j] = original index of the element that belongs at position j
         order = sorted(range(n), key=lambda i: (digit_sum(nums[i]), nums[i]))
 
