@@ -12,5 +12,4 @@ class Solution:
             remaining -= digit
         if remaining > 0:
             return ""
-
         return "".join(digits)
