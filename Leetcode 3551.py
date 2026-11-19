@@ -1,7 +1,6 @@
 class Solution:
     def minSwaps(self, nums: List[int]) -> int:
         n = len(nums)
-
         def digit_sum(x):
             s = 0
             while x:
