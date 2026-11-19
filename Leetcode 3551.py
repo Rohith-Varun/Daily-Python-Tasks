@@ -13,7 +13,7 @@ class Solution:
         for i in range(n):
             if visited[i] or order[i] == i:
                 continue
-            # walk one cycle of the permutation
+            
             length = 0
             j = i
             while not visited[j]:
