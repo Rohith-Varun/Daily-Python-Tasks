@@ -20,5 +20,4 @@ class Solution:
                 j = order[j]
                 length += 1
             swaps += length - 1
-
         return swaps
