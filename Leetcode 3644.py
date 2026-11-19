@@ -6,6 +6,5 @@ class Solution:
                 if k == -1:
                     k = val
                 else:
-                    k &= val
-                    
+                    k &= val      
         return k if k != -1 else 0
