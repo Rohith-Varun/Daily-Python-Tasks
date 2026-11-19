@@ -10,7 +10,6 @@ class Solution:
         order = sorted(range(n), key=lambda i: (digit_sum(nums[i]), nums[i]))
         visited = [False] * n
         swaps = 0
-
         for i in range(n):
             if visited[i] or order[i] == i:
                 continue
