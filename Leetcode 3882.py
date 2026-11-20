@@ -17,6 +17,4 @@ class Solution:
                         prev -= bit
                         xor_value = bit.bit_length() - 1
                         dp[j] |= 1 << (xor_value ^ val)
-
-        
         return (dp[-1] & -dp[-1]).bit_length() - 1
