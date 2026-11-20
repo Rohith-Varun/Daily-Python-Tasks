@@ -8,7 +8,6 @@ class Solution:
                 if i == 0 and j == 0:
                     dp[j] = 1 << val
                 else:
-                    
                     prev = dp[j]
 
                     if j > 0:
