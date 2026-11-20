@@ -5,7 +5,6 @@ class Solution:
         for i in range(m):
             for j in range(n):
                 val = grid[i][j]
-
                 if i == 0 and j == 0:
                     dp[j] = 1 << val
                 else:
