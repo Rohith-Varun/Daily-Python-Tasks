@@ -12,7 +12,7 @@ class Solution:
                     if j > 0:
                         prev |= dp[j - 1]
 
-                    # XOR the current cell value with every possible
+                    
                     # XOR value from the previous paths.
                     dp[j] = 0
 
