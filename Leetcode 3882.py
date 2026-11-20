@@ -2,7 +2,6 @@ class Solution:
     def minCost(self, grid: list[list[int]]) -> int:
         m, n = len(grid), len(grid[0])
         dp = [0] * n
-
         for i in range(m):
             for j in range(n):
                 val = grid[i][j]
