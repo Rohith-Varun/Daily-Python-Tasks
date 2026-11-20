@@ -13,7 +13,6 @@ class Solution:
                         prev |= dp[j - 1]
 
                     
-                    
                     dp[j] = 0
 
                     while prev:
