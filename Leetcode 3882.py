@@ -12,7 +12,6 @@ class Solution:
                     if j > 0:
                         prev |= dp[j - 1] 
                     dp[j] = 0
-
                     while prev:
                         bit = prev & -prev
                         prev -= bit
