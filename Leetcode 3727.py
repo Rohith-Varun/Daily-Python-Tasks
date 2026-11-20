@@ -8,5 +8,4 @@ class Solution:
                 ans += x * x
             else:
                 ans -= x * x
-
         return ans
