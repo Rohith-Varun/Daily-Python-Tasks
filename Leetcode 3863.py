@@ -1,5 +1,4 @@
 from string import ascii_lowercase
-
 class Solution:
     def minOperations(self, s: str) -> int:
         n = len(s)
