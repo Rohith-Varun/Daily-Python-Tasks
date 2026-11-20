@@ -3,7 +3,7 @@ class Solution:
     def minOperations(self, s: str) -> int:
         n = len(s)
 
-        # Linear sortedness check via counting (26 fast C-level passes)
+        
         if s == "".join(c * s.count(c) for c in ascii_lowercase):
             return 0
         if n == 2:
