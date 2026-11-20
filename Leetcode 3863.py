@@ -11,5 +11,4 @@ class Solution:
             return 1
         if s[0] == mx and s[-1] == mn and s.count(mn) == 1 and s.count(mx) == 1:
             return 3
-
         return 2
