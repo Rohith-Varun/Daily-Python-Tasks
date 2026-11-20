@@ -9,7 +9,6 @@ class Solution:
                     dp[j] = 1 << val
                 else:
                     prev = dp[j]
-
                     if j > 0:
                         prev |= dp[j - 1]
 
