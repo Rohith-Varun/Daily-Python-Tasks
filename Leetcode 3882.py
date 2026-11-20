@@ -3,7 +3,6 @@ class Solution:
         m, n = len(grid), len(grid[0])
 
         
-        
         dp = [0] * n
 
         for i in range(m):
