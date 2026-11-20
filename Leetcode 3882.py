@@ -13,7 +13,7 @@ class Solution:
                         prev |= dp[j - 1]
 
                     
-                    # XOR value from the previous paths.
+                    
                     dp[j] = 0
 
                     while prev:
