@@ -2,7 +2,7 @@ class Solution:
     def minCost(self, grid: list[list[int]]) -> int:
         m, n = len(grid), len(grid[0])
 
-        # dp[j] stores all possible XOR values for the current row
+        
         # at column j.
         dp = [0] * n
 
