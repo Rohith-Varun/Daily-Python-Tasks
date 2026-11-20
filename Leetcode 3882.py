@@ -1,4 +1,3 @@
-
 class Solution:
     def minCost(self, grid: list[list[int]]) -> int:
         m, n = len(grid), len(grid[0])
