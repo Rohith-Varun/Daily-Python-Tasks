@@ -2,7 +2,6 @@ from string import ascii_lowercase
 class Solution:
     def minOperations(self, s: str) -> int:
         n = len(s)
-
         
         if s == "".join(c * s.count(c) for c in ascii_lowercase):
             return 0
