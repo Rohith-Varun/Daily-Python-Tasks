@@ -10,8 +10,7 @@ class Solution:
                 else:
                     prev = dp[j]
                     if j > 0:
-                        prev |= dp[j - 1]
-                    
+                        prev |= dp[j - 1] 
                     dp[j] = 0
 
                     while prev:
