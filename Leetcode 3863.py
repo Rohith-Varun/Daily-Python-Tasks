@@ -9,7 +9,6 @@ class Solution:
         mn, mx = min(s), max(s)
         if s[0] == mn or s[-1] == mx:
             return 1
-
         if s[0] == mx and s[-1] == mn and s.count(mn) == 1 and s.count(mx) == 1:
             return 3
 
