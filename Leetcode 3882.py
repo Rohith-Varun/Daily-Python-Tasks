@@ -8,7 +8,7 @@ class Solution:
                 if i == 0 and j == 0:
                     dp[j] = 1 << val
                 else:
-                    # Paths can come from above or from the left.
+                    
                     prev = dp[j]
 
                     if j > 0:
