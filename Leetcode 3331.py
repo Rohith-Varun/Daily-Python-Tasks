@@ -6,7 +6,6 @@ class Solution:
             adj[parent[i]].append(i)
         new_parent = parent[:]
         last_seen = [-1] * 26
-
         def dfs_reparent(u: int) -> None:
             idx = ord(s[u]) - 97
             prev = last_seen[idx]
