@@ -4,7 +4,6 @@ class Solution:
         adj = [[] for _ in range(n)]
         for i in range(1, n):
             adj[parent[i]].append(i)
-
         new_parent = parent[:]
         last_seen = [-1] * 26
 
