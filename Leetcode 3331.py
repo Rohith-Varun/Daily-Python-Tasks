@@ -20,7 +20,6 @@ class Solution:
         for i in range(1, n):
             new_adj[new_parent[i]].append(i)
         ans = [1] * n
-
         def dfs_size(u: int) -> int:
             total = 1
             for v in new_adj[u]:
