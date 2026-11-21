@@ -16,7 +16,6 @@ class Solution:
                 dfs_reparent(v)
             last_seen[idx] = prev
         dfs_reparent(0)
-
         new_adj = [[] for _ in range(n)]
         for i in range(1, n):
             new_adj[new_parent[i]].append(i)
