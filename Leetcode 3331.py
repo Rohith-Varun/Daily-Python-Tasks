@@ -15,7 +15,6 @@ class Solution:
             for v in adj[u]:
                 dfs_reparent(v)
             last_seen[idx] = prev
-
         dfs_reparent(0)
 
         new_adj = [[] for _ in range(n)]
