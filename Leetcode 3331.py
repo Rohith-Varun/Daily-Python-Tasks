@@ -26,6 +26,5 @@ class Solution:
                 total += dfs_size(v)
             ans[u] = total
             return total
-
         dfs_size(0)
         return ans
