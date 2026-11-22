@@ -24,7 +24,6 @@ class Solution:
                 if drops > 1 or prev_max > block_min:
                     valid = False
                     break
-
                 prev_max = block_max
 
             if valid:
