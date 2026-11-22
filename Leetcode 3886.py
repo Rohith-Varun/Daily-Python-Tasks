@@ -6,7 +6,6 @@ class Solution:
         for k in range(1, n + 1):
             if n % k != 0:
                 continue
-
             valid = True
             prev_max = -1
 
