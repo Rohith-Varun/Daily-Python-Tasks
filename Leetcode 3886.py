@@ -19,7 +19,6 @@ class Solution:
                     block_max = max(block_max, x)
                     if i > start and nums[i - 1] > x:
                         drops += 1
-
                 if nums[end - 1] > nums[start]:
                     drops += 1
 
