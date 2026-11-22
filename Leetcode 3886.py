@@ -25,7 +25,6 @@ class Solution:
                     valid = False
                     break
                 prev_max = block_max
-
             if valid:
                 ans += k
 
