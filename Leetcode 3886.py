@@ -3,7 +3,6 @@ class Solution:
     def sortableIntegers(self, nums: List[int]) -> int:
         n = len(nums)
         ans = 0
-
         for k in range(1, n + 1):
             if n % k != 0:
                 continue
