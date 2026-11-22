@@ -8,7 +8,6 @@ class Solution:
                 continue
             valid = True
             prev_max = -1
-
             for start in range(0, n, k):
                 end = start + k
                 block_min = nums[start]
