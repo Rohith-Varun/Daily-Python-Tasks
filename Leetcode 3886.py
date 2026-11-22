@@ -13,7 +13,6 @@ class Solution:
                 block_min = nums[start]
                 block_max = nums[start]
                 drops = 0
-
                 for i in range(start, end):
                     x = nums[i]
                     block_min = min(block_min, x)
