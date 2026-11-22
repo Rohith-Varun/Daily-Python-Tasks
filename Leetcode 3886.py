@@ -21,7 +21,6 @@ class Solution:
                         drops += 1
                 if nums[end - 1] > nums[start]:
                     drops += 1
-
                 if drops > 1 or prev_max > block_min:
                     valid = False
                     break
