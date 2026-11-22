@@ -27,5 +27,4 @@ class Solution:
                 prev_max = block_max
             if valid:
                 ans += k
-
         return ans
