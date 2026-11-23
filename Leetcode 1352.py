@@ -6,7 +6,6 @@ class ProductOfNumbers:
             self.prefix = [1]
         else:
             self.prefix.append(self.prefix[-1] * num)
-
     def getProduct(self, k: int) -> int:
         if k >= len(self.prefix):
             return 0
