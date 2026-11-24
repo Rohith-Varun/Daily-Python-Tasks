@@ -8,7 +8,6 @@ class Solution:
             cur_prod = 1
             cur_gcd = 0
             cur_lcm = 1
-
             for j in range(i, n):
                 x = nums[j]
                 cur_prod *= x
