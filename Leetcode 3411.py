@@ -4,7 +4,6 @@ class Solution:
         n = len(nums)
         ans = 0
         max_lcm = 2520
-
         for i in range(n):
             cur_prod = 1
             cur_gcd = 0
