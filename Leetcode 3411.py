@@ -15,7 +15,6 @@ class Solution:
                 cur_lcm = math.lcm(cur_lcm, x)
                 if cur_prod > max_lcm * cur_gcd * cur_lcm:
                     break
-
                 if cur_prod == cur_lcm * cur_gcd:
                     ans = max(ans, j - i + 1)
 
