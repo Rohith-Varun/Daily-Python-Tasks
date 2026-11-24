@@ -1,5 +1,4 @@
 import math
-
 class Solution:
     def maxLength(self, nums: list[int]) -> int:
         n = len(nums)
