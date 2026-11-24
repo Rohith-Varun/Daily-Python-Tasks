@@ -13,7 +13,6 @@ class Solution:
                 cur_prod *= x
                 cur_gcd = x if cur_gcd == 0 else math.gcd(cur_gcd, x)
                 cur_lcm = math.lcm(cur_lcm, x)
-
                 if cur_prod > max_lcm * cur_gcd * cur_lcm:
                     break
 
