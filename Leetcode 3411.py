@@ -17,5 +17,4 @@ class Solution:
                     break
                 if cur_prod == cur_lcm * cur_gcd:
                     ans = max(ans, j - i + 1)
-
         return ans
