@@ -21,7 +21,6 @@ class Solution:
         def has_unique_of_len(k: int) -> bool:
             freq = Counter(get_hash(i, i + k) for i in range(n - k + 1))
             return any(cnt == 1 for cnt in freq.values())
-
         lo, hi = 1, n
         ans = n
         while lo <= hi:
