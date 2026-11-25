@@ -9,7 +9,6 @@ class Solution:
         p2 = [1] * (n + 1)
         h1 = [0] * (n + 1)
         h2 = [0] * (n + 1)
-
         for i, val in enumerate(nums):
             p1[i + 1] = (p1[i] * base1) % mod1
             p2[i + 1] = (p2[i] * base2) % mod2
