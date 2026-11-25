@@ -1,7 +1,6 @@
 from collections import Counter
 from typing import List
 
-
 class Solution:
     def smallestUniqueSubarray(self, nums: List[int]) -> int:
         n = len(nums)
