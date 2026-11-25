@@ -5,7 +5,6 @@ class Solution:
         n = len(nums)
         mod1, mod2 = 1000000007, 1000000009
         base1, base2 = 100003, 100019
-
         p1 = [1] * (n + 1)
         p2 = [1] * (n + 1)
         h1 = [0] * (n + 1)
