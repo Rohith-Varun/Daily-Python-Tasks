@@ -14,7 +14,6 @@ class Solution:
             p2[i + 1] = (p2[i] * base2) % mod2
             h1[i + 1] = (h1[i] * base1 + val) % mod1
             h2[i + 1] = (h2[i] * base2 + val) % mod2
-
         def get_hash(l: int, r: int) -> tuple[int, int]:
             x1 = (h1[r] - h1[l] * p1[r - l]) % mod1
             x2 = (h2[r] - h2[l] * p2[r - l]) % mod2
