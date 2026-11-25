@@ -18,7 +18,6 @@ class Solution:
             x1 = (h1[r] - h1[l] * p1[r - l]) % mod1
             x2 = (h2[r] - h2[l] * p2[r - l]) % mod2
             return (x1, x2)
-
         def has_unique_of_len(k: int) -> bool:
             freq = Counter(get_hash(i, i + k) for i in range(n - k + 1))
             return any(cnt == 1 for cnt in freq.values())
