@@ -14,7 +14,6 @@ class Solution:
                 bonus += freq[mult]
             if freq[f] > 1:
                 bonus += freq[f] - 1
-
             gain = 1 + bonus
             if price <= budget:
                 for b in range(budget, price - 1, -1):
