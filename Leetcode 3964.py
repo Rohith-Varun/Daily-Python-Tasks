@@ -20,7 +20,6 @@ class Solution:
                     cand = dp[b - price] + gain
                     if cand > dp[b]:
                         dp[b] = cand
-
         ans = 0
         for b in range(budget + 1):
             total = dp[b] + (budget - b) // min_price
