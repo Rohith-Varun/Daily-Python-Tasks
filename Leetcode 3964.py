@@ -4,7 +4,6 @@ class Solution:
         freq = [0] * (max_factor + 1)
         for f, _ in items:
             freq[f] += 1
-
         dp = [0] * (budget + 1)
         min_price = float("inf")
 
