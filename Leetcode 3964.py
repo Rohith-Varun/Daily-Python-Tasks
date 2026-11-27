@@ -6,7 +6,6 @@ class Solution:
             freq[f] += 1
         dp = [0] * (budget + 1)
         min_price = float("inf")
-
         for f, price in items:
             if price < min_price:
                 min_price = price
