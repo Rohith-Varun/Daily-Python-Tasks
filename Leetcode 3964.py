@@ -25,5 +25,4 @@ class Solution:
             total = dp[b] + (budget - b) // min_price
             if total > ans:
                 ans = total
-
         return ans
