@@ -9,7 +9,6 @@ class Solution:
         for f, price in items:
             if price < min_price:
                 min_price = price
-
             bonus = 0
             for mult in range(f * 2, max_factor + 1, f):
                 bonus += freq[mult]
