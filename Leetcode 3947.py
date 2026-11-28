@@ -4,7 +4,6 @@ class Solution:
         max_f = max(f for f, _ in items)
         freq = [0] * (max_f + 1)
         min_price = float("inf")
-
         for f, price in items:
             freq[f] += 1
             if price < min_price:
