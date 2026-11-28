@@ -13,7 +13,6 @@ class Solution:
             if freq[d]:
                 for m in range(d, max_f + 1, d):
                     multiples[d] += freq[m]
-
         boosted_by_price = defaultdict(int)
         threshold = 2 * min_price
         for f, price in items:
