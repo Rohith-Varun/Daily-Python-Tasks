@@ -20,7 +20,6 @@ class Solution:
                 gain = multiples[f] - 1
                 if gain > 0:
                     boosted_by_price[price] += gain
-
         total_items = 0
         for price in sorted(boosted_by_price):
             if budget < price:
