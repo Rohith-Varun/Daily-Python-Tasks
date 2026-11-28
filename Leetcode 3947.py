@@ -8,7 +8,6 @@ class Solution:
             freq[f] += 1
             if price < min_price:
                 min_price = price
-
         multiples = [0] * (max_f + 1)
         for d in range(1, max_f + 1):
             if freq[d]:
