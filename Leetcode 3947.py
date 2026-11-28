@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 class Solution:
     def maximumSaleItems(self, items: list[list[int]], budget: int) -> int:
         max_f = max(f for f, _ in items)
