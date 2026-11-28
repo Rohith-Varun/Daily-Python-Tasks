@@ -27,6 +27,5 @@ class Solution:
             take = min(boosted_by_price[price], budget // price)
             total_items += 2 * take
             budget -= take * price
-
         total_items += budget // min_price
         return total_items
